@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Index";
+    ViewBag.Description = "Home Page";
+}
+
+<div class="row">
+    <div class="box-body">
+        @foreach (var item in ViewBag.Value)
+        {
+            <div class="form-group">
+                <img src="data:image/png;base64,@item" />
+            </div>
+            <br />
+        }
+    </div>
+</div>
